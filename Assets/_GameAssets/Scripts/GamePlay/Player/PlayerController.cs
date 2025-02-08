@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private KeyCode _jumpKey;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _jumpCooldown;  
+    [SerializeField] private float _airMultiplier;
+    [SerializeField] private float _airDrag;
     [SerializeField] private bool _canJump;
 
     [Header("Sliding Settings")]
@@ -27,6 +29,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private float _groundDrag;
 
+
+    private StateController _stateController;
     private Rigidbody _playerRigidBody;
 
     private float _Horizantalİnput, _Verticalİnput;
@@ -36,12 +40,14 @@ public class PlayerController : MonoBehaviour
     private bool _isSliding;
     private void Awake() 
     {
+        _stateController = GetComponent<StateController>();
         _playerRigidBody = GetComponent<Rigidbody>();
         _playerRigidBody.freezeRotation = true;
     }
     private void Update() 
     {
         Setİnputs();
+        SetStates();
         SetPlayerDrag();
         LimitPlayerSpeed();
     }
@@ -70,21 +76,54 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void SetStates()
+    {
+        var movementDirection = GetMovementDirection();
+        var isGrounded = IsGrounded();
+        var isSliding = IsSliding();
+        var currentState = _stateController.GetCurrentState();
+       
+        var newState = currentState switch
+        {
+            _ when  movementDirection == Vector3.zero && isGrounded && !isSliding => PlayerState.Idle,
+            _ when  movementDirection != Vector3.zero && isGrounded && !isSliding => PlayerState.Move,
+            _ when  movementDirection != Vector3.zero && isGrounded && isSliding => PlayerState.Slide,
+            _ when  movementDirection == Vector3.zero && isGrounded && isSliding => PlayerState.SlideIdle,
+            _ when  !_canJump && !isGrounded => PlayerState.Jump,
+            _ => currentState
+        };
+
+        if(newState != currentState)
+        {
+            _stateController.ChangeState(newState);
+        }
+        Debug.Log(newState);
+
+    }
+
     private void SetPlayerMovement()
     {
         _MovementDirection = _Orientation.transform.forward * _Verticalİnput + _Orientation.transform.right * _Horizantalİnput;
 
-        if(_isSliding)
+        float forceMultiplier = _stateController.GetCurrentState() switch
         {
-            _playerRigidBody.AddForce(_MovementDirection.normalized * _movementSpeed * _slidingMultiplier, ForceMode.Force);
-        }
-        else
-        {
-            _playerRigidBody.AddForce(_MovementDirection.normalized * _movementSpeed, ForceMode.Force);
-        }        
+            PlayerState.Move => 1f,
+            PlayerState.Slide => _slidingMultiplier,
+            PlayerState.Jump => _airMultiplier,
+            _ => 1f
+        };
+        _playerRigidBody.AddForce(_MovementDirection.normalized * _movementSpeed * forceMultiplier, ForceMode.Force);
     }
     private void SetPlayerDrag()
     {
+
+        _playerRigidBody.linearDamping = _stateController.GetCurrentState() switch
+        {
+            PlayerState.Move => _groundDrag,
+            PlayerState.Slide => _slidingDrag,
+            PlayerState.Jump => _airDrag,
+            _ => _playerRigidBody.linearDamping
+        };
         if(_isSliding)
         {
             _playerRigidBody.linearDamping = _slidingDrag;
@@ -120,5 +159,15 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics.Raycast(transform.position, Vector3.down, _playerHeight * 0.5f + 0.2f, _groundLayer);    
+    }
+
+    private Vector3 GetMovementDirection()
+    {
+        return _MovementDirection.normalized;
+    }
+
+    private bool IsSliding()
+    {
+        return _isSliding;
     }
 }
