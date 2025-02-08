@@ -776,6 +776,7 @@ GameObject:
   - component: {fileID: 533421553}
   - component: {fileID: 533421556}
   - component: {fileID: 533421557}
+  - component: {fileID: 533421558}
   - component: {fileID: 533421555}
   - component: {fileID: 533421554}
   m_Layer: 0
@@ -893,6 +894,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b834f60d9d68bbc44a99206062eb1845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &533421558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533421552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5752bdf46446d4cb265ca8c2592e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerAnimator: {fileID: 9165132581886433502}
 --- !u!1 &643984572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,7 +2436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5272412713500038017}
   m_Layer: 0
-  m_Name: root
+  m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2437,6 +2451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9165132581886433501}
+  - component: {fileID: 9165132581886433502}
   m_Layer: 0
   m_Name: PlayerVisual
   m_TagString: Untagged
@@ -2522,6 +2537,28 @@ Transform:
   - {fileID: 203218875}
   m_Father: {fileID: 533421553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &9165132581886433502
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8393239841646789223}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f4d84c15e5637f459f5b80cd4203531, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

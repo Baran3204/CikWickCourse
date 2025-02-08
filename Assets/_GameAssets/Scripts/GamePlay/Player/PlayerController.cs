@@ -1,8 +1,11 @@
 
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public event Action OnPlayerjumped;
+
     [Header("Refences")]
     [SerializeField] private Transform _Orientation;
 
@@ -124,15 +127,6 @@ public class PlayerController : MonoBehaviour
             PlayerState.Jump => _airDrag,
             _ => _playerRigidBody.linearDamping
         };
-        if(_isSliding)
-        {
-            _playerRigidBody.linearDamping = _slidingDrag;
-        }
-        else
-        {
-            _playerRigidBody.linearDamping = _groundDrag;
-        }
-        
     }
 
     private void LimitPlayerSpeed()
@@ -147,6 +141,7 @@ public class PlayerController : MonoBehaviour
     }
     private void SetPlayerJumping()
     {
+        OnPlayerjumped?.Invoke();
         _playerRigidBody.linearVelocity = new Vector3(_playerRigidBody.linearVelocity.x, 0f, _playerRigidBody.linearVelocity.z);
         _playerRigidBody.AddForce(transform.up * _jumpForce, ForceMode.Impulse);
     }
