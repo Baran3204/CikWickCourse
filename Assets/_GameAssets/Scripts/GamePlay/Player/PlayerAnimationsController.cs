@@ -17,7 +17,7 @@ public class PlayerAnimationsController : MonoBehaviour
    private void Start() 
    {
         _playerController.OnPlayerjumped += PlayerController_OnPlayerjumped;   
-        Invoke(nameof(ResetJumping), 0.5f);
+        
    }
     private void Update() 
    {
@@ -27,6 +27,7 @@ public class PlayerAnimationsController : MonoBehaviour
    private void PlayerController_OnPlayerjumped()
     {
        _playerAnimator.SetBool(Consts.PlayerAnimations.IS_JUMPING, true);
+       Invoke(nameof(ResetJumping), 0.5f);
     }
     private void ResetJumping()
     {
