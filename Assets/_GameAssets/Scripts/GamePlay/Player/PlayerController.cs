@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public event Action OnPlayerjumped;
-
+    public event Action<PlayerState> OnPlayerStateChanged;
     [Header("Refences")]
     [SerializeField] private Transform _Orientation;
 
@@ -104,6 +104,7 @@ public class PlayerController : MonoBehaviour
         if(newState != currentState)
         {
             _stateController.ChangeState(newState);
+            OnPlayerStateChanged?.Invoke(newState);
         }
     }
 
@@ -153,7 +154,10 @@ public class PlayerController : MonoBehaviour
     {
         _canJump = true;
     }
-    
+    public Rigidbody GetPlayerRigidbody()
+    {
+        return _playerRigidBody;
+    }
     #region Helpers Functions
     private bool IsGrounded()
     {

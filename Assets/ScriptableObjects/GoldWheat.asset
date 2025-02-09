@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _increaseDecreaseMultiplier: 15
   _resetBoostDuration: 5
+  _activeSprite: {fileID: 21300000, guid: fe1e04622515895409dc543308efc916, type: 3}
+  _passiveSprite: {fileID: 21300000, guid: 7a18cc93cde47494aa1165949a572f26, type: 3}
+  _activeWheatSprite: {fileID: 21300000, guid: b530e18c6500a4e4ba8d98c5a6f3a0cb, type: 3}
+  _passiveWheatSprite: {fileID: 21300000, guid: 38a7c70361b84084a965cf04e58b0a41, type: 3}
