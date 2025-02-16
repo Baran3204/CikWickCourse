@@ -1,3 +1,5 @@
+using System;
+using System.Linq.Expressions;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -16,15 +18,32 @@ public class TimerUI : MonoBehaviour
   [SerializeField] private Ease _rotationEase;
 
   private float _elapsedTime;
+  private bool _isTimerRunning;
+  private Tween _rotationTween;
   private void Start() 
   {
     PlayRotationAnimation();
     StartTimer();
+
+    GameManager.Instance.OnGameStateChanged += GameManager_OnGameStateChanged;
   }
 
-  private void PlayRotationAnimation()
+    private void GameManager_OnGameStateChanged(GameState gameState)
+    {
+      switch(gameState)
+      {
+        case GameState.Pause:
+              PauseTimer();
+              break;
+        case GameState.Play:
+              ResumeTimer();
+              break;
+      }
+    }
+
+    private void PlayRotationAnimation()
   {
-    _timerRotatableTransform.DORotate(new Vector3(0f, 0f, -360f), _rotationDuration, RotateMode.FastBeyond360)
+    _rotationTween = _timerRotatableTransform.DORotate(new Vector3(0f, 0f, -360f), _rotationDuration, RotateMode.FastBeyond360)
     .SetLoops(-1, LoopType.Restart)
     .SetEase(_rotationEase);
   }
@@ -35,8 +54,26 @@ public class TimerUI : MonoBehaviour
     InvokeRepeating(nameof(UpdateTimerUI), 0f, 1f);
   }
 
+  private void PauseTimer()
+  {
+      _isTimerRunning = false;
+      CancelInvoke(nameof(UpdateTimerUI));
+      _rotationTween.Pause();
+  }
+
+  private void ResumeTimer()
+  {
+      if(!_isTimerRunning)
+      {
+        _isTimerRunning = true;
+        InvokeRepeating(nameof(UpdateTimerUI), 0f, 1f);
+        _rotationTween.Play();
+      }
+  }
+
   private void UpdateTimerUI()
   {
+    if(!_isTimerRunning){return;}
     _elapsedTime += 1f;
       
     int minutes = Mathf.FloorToInt(_elapsedTime / 60f);
