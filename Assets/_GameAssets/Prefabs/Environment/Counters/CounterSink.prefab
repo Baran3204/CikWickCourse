@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5356594211232646818}
   - component: {fileID: 967682268125052495}
   - component: {fileID: 2179221717791095512}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: CounterSink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 89f7360f03906454697a9cd8b0c39315, type: 2}
+  - {fileID: 2100000, guid: 7633350999443e64ebd9c6e512ca70ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +94,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8606801366562232469}
-  m_Material: {fileID: 13400000, guid: 86eb2296dbafe164ab5b1f4448c8b0d7, type: 2}
+  m_Material: {fileID: 13400000, guid: c32d608705d28c24eacbf9818a87bf82, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

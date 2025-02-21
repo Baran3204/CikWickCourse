@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7065622053726825973}
   - component: {fileID: 3902903812667198670}
   - component: {fileID: 4690613347039741999}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallDoorway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7a668623c958050488330bfd4f736d25, type: 2}
+  - {fileID: 2100000, guid: 7633350999443e64ebd9c6e512ca70ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 5630681006228539537}
   - component: {fileID: 2737148767863440144}
   - component: {fileID: 736863301350216338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,8 +151,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7a668623c958050488330bfd4f736d25, type: 2}
-  - {fileID: 2100000, guid: f2f5416756597834ca5e301434a8d05d, type: 2}
+  - {fileID: 2100000, guid: 1d1a5e0ff7134724ab651ecf313cff49, type: 2}
+  - {fileID: 2100000, guid: e8fa4df219e2af04f8bfd47756bfa533, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
