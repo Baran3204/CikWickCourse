@@ -7,6 +7,14 @@ public class Consts
         public const string IS_JUMPING = "IsJumping";
         public const string IS_SLIDING_ACTIVE = "IsSlidingActive";
     }
+
+    public struct SetCatAnimations
+    {
+        public const string IS_IDLING = "IsIdling";
+        public const string IS_WALKING = "IsWalking";
+        public const string IS_RUNNING = "IsRunning";
+        public const string IS_ATTACKING = "IsAttacking";
+    }
     public struct WheatTypes
     {
         public const string GOLD_WHEAT = "GoldWheat";
