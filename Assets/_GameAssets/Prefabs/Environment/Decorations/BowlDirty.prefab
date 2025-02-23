@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6442200154753389911}
   - component: {fileID: 981052069384135732}
   - component: {fileID: 832817131190690739}
+  - component: {fileID: 5106670440512526564}
   m_Layer: 6
   m_Name: BowlDirty
   m_TagString: Untagged
@@ -109,3 +110,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6319698798900309868, guid: f3cadae1e12612b40bb155f5f5db57a0, type: 3}
+--- !u!208 &5106670440512526564
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5351554294330231975}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.375, y: 0.75000006, z: 2.375}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.75000006, z: 0}
+  m_TimeToStationary: 0.5

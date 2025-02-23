@@ -23,4 +23,12 @@ public class Consts
     {
         public const string GAME_SCENE = "GameScene";
     }
+
+    public struct LayerNames
+    {
+        public const string GROUND = "Ground";
+        public const string FLOOR = "Floor";
+
+        
+    }
 }

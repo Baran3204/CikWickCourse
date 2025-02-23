@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 238428208613488876}
   - component: {fileID: 307979685516711071}
   - component: {fileID: 1473796357707108700}
+  - component: {fileID: 1341394129865939754}
   m_Layer: 6
   m_Name: Oven
   m_TagString: Untagged
@@ -195,3 +196,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000002, y: 10.099913, z: 11.739354}
   m_Center: {x: -2.8088119e-14, y: 5.0499563, z: 0.7196743}
+--- !u!208 &1341394129865939754
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5268118930319486225}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5, y: 5.05, z: 5.8700004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 5.05, z: 0.72}
+  m_TimeToStationary: 0.5

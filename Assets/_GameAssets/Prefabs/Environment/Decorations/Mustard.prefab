@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1934341981618281442}
   - component: {fileID: 5028251078088450012}
   - component: {fileID: 1372333617757230616}
+  - component: {fileID: 2696485093802095887}
   m_Layer: 6
   m_Name: Mustard
   m_TagString: Untagged
@@ -108,3 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4999999, y: 3.8925402, z: 1.5000001}
   m_Center: {x: 0, y: 1.9462701, z: -0.00000008940695}
+--- !u!208 &2696485093802095887
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753603148932149321}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.75000006, y: 1.9460001, z: 0.75000006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.9460001, z: 0}
+  m_TimeToStationary: 0.5

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2072983771166690029}
   - component: {fileID: 1021648495135838244}
   - component: {fileID: 3176094815269453584}
+  - component: {fileID: 5863246685438290946}
   m_Layer: 6
   m_Name: CrateLettuce
   m_TagString: Untagged
@@ -108,3 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000001, y: 4.9902706, z: 10.000023}
   m_Center: {x: 0.00000047683713, y: 2.4951258, z: -0.0000009536743}
+--- !u!208 &5863246685438290946
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294180630638763425}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5, y: 2.4950001, z: 5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.4950001, z: 0}
+  m_TimeToStationary: 0.5

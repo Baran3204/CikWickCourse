@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1943800158709931203}
   - component: {fileID: 7524299873430172374}
   - component: {fileID: 7304007065716308858}
+  - component: {fileID: 443590749565532991}
   m_Layer: 6
   m_Name: CabinetCorner
   m_TagString: Untagged
@@ -109,3 +110,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 133223567487352451, guid: 704b292a185a9d144914c49cadcf4308, type: 3}
+--- !u!208 &443590749565532991
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073092124982350279}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.0000002, y: 3.0000002, z: 3.0000002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 9, z: 3.0000002}
+  m_TimeToStationary: 0.5

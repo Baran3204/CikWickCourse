@@ -157,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerController: {fileID: 0}
   _wheatDesignSO: {fileID: 11400000, guid: ecfd7b7184ebf04468435bff02d9f9b4, type: 2}
+  _playerStateUI: {fileID: 0}
 --- !u!65 &3739108895123074299
 BoxCollider:
   m_ObjectHideFlags: 0

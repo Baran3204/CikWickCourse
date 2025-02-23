@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3052719228833453434}
   - component: {fileID: 161034422608196189}
   - component: {fileID: 4084499603105595234}
+  - component: {fileID: 5193113752622434464}
   m_Layer: 6
   m_Name: MugYellow
   m_TagString: Untagged
@@ -109,3 +110,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3790598673493175628, guid: 612e3e92d7330bb41adaebd3a951b7c9, type: 3}
+--- !u!208 &5193113752622434464
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156155478914510561}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2800001, y: 0.87500006, z: 0.938}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.34800002, y: 0.87500006, z: 0}
+  m_TimeToStationary: 0.5

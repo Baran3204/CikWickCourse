@@ -204,5 +204,21 @@ public class PlayerController : MonoBehaviour
     {
         _jumpForce = _startingJumpForce;
     }
+
+    public bool CanCatChase()
+    {
+        if(Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, _playerHeight * 0.5f + 0.2f, _groundLayer))
+        {
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer(Consts.LayerNames.FLOOR))
+            {
+                return true;
+            }
+            else if(hit.collider.gameObject.layer == LayerMask.NameToLayer(Consts.LayerNames.GROUND))
+            {
+                return false;
+            }
+        }
+        return false;
+    }
     #endregion
 }

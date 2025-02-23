@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3193121648715645971}
   - component: {fileID: 4342352682810971815}
   - component: {fileID: 9209655072118985703}
+  - component: {fileID: 2785448433262524733}
   m_Layer: 6
   m_Name: LettuceChopped
   m_TagString: Untagged
@@ -109,3 +110,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 287175947394519146, guid: a795a78fa3972f744998a3f048a1c429, type: 3}
+--- !u!208 &2785448433262524733
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9182397955758909633}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.4950004, y: 2.022, z: 3.029}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -1.575, y: 1.8610001, z: -0.064}
+  m_TimeToStationary: 0.5

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2649408692694221557}
   - component: {fileID: 8056194373094975221}
   - component: {fileID: 2434268438883042425}
+  - component: {fileID: 8156694420080898038}
   m_Layer: 6
   m_Name: ShelfHooks
   m_TagString: Untagged
@@ -108,3 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6, y: 2.4097328, z: 2.1000001}
   m_Center: {x: -0.00000011920929, y: -1.2048662, z: 1.0499998}
+--- !u!208 &8156694420080898038
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101120655561393728}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.0000002, y: 1.205, z: 1.0500001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -1.205, z: 1.0500001}
+  m_TimeToStationary: 0.5

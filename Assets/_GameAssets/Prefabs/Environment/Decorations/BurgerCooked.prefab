@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1204799633144462751}
   - component: {fileID: 2086704633876705373}
   - component: {fileID: 4046611489250616426}
+  - component: {fileID: 7818326564659362988}
   m_Layer: 6
   m_Name: BurgerCooked
   m_TagString: Untagged
@@ -109,3 +110,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2720608395318045412, guid: 3170b376307493f4f8eb9c689f07f54c, type: 3}
+--- !u!208 &7818326564659362988
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152337675958255284}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.7500001, y: 0.5, z: 1.7500001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+  m_TimeToStationary: 0.5

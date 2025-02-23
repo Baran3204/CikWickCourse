@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 112310514383320088}
   - component: {fileID: 2500766591043845109}
   - component: {fileID: 6823074084900356552}
+  - component: {fileID: 6936203059565202962}
   m_Layer: 6
   m_Name: BunBot
   m_TagString: Untagged
@@ -109,3 +110,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3321087029127066147, guid: f62159afefcb61946a2d39387638d946, type: 3}
+--- !u!208 &6936203059565202962
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3041763807436175890}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.7340001, y: 0.5, z: 1.7340001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+  m_TimeToStationary: 0.5

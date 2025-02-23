@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3782187526679699664}
   - component: {fileID: 5300989756812818441}
   - component: {fileID: 4067862575414032363}
+  - component: {fileID: 3026151862361175803}
   m_Layer: 6
   m_Name: OvenGlove
   m_TagString: Untagged
@@ -108,3 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.2205136, y: 0.9817023, z: 2.6178014}
   m_Center: {x: 0.29671592, y: 0.0000002846935, z: 0.16571389}
+--- !u!208 &3026151862361175803
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306548356656550234}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.11, y: 0.49100003, z: 1.309}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.29700002, y: 0, z: 0.16600001}
+  m_TimeToStationary: 0.5

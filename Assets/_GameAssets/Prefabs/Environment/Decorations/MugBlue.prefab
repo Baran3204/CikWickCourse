@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7100870907393268257}
   - component: {fileID: 102706012967880816}
   - component: {fileID: 6515329094439296907}
+  - component: {fileID: 4223900835109655619}
   m_Layer: 6
   m_Name: MugBlue
   m_TagString: Untagged
@@ -109,3 +110,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 34527651960620873, guid: 435514bde781f744d925cd7e751a602d, type: 3}
+--- !u!208 &4223900835109655619
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3115078873455509567}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.2800001, y: 0.87500006, z: 0.938}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.34800002, y: 0.87500006, z: 0}
+  m_TimeToStationary: 0.5

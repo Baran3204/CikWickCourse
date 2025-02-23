@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4864320708389876290}
   - component: {fileID: 3676971279001662726}
   - component: {fileID: 6609044227787801131}
+  - component: {fileID: 2014612269416142072}
   m_Layer: 6
   m_Name: CrateBuns
   m_TagString: Untagged
@@ -108,3 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000001, y: 4.011907, z: 10.000023}
   m_Center: {x: 0.00000047683716, y: 2.005944, z: -0.0000009536743}
+--- !u!208 &2014612269416142072
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371278777053028324}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5, y: 2.006, z: 5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.006, z: 0}
+  m_TimeToStationary: 0.5

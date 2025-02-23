@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4455938977773796850}
   - component: {fileID: 3329715066226759673}
   - component: {fileID: 1068178777997610277}
+  - component: {fileID: 7486152165517869233}
   m_Layer: 6
   m_Name: KnifeRack
   m_TagString: Untagged
@@ -108,3 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.8, y: 3.1240344, z: 0.50862503}
   m_Center: {x: 0, y: 0.1551277, z: 0.25431252}
+--- !u!208 &7486152165517869233
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2805892520985930752}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.4, y: 1.562, z: 0.254}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.155, z: 0.254}
+  m_TimeToStationary: 0.5

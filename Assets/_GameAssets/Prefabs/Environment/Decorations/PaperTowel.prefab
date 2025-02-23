@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 278872236351020069}
   - component: {fileID: 4408329866938466421}
   - component: {fileID: 4345379681381785947}
+  - component: {fileID: 8829516225409873078}
   m_Layer: 6
   m_Name: PaperTowel
   m_TagString: Untagged
@@ -108,3 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.8, y: 1.7250001, z: 1.4700003}
   m_Center: {x: 0, y: -0.2624998, z: 0.73500013}
+--- !u!208 &8829516225409873078
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8184751001411030015}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.4, y: 0.86300004, z: 0.735}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.26200002, z: 0.735}
+  m_TimeToStationary: 0.5
