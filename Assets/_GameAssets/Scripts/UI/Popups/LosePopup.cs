@@ -17,6 +17,10 @@ public class LosePopup : MonoBehaviour
         _timerText.text = _timerUI.GetFinalTime();
 
         _tryAgainButton.onClick.AddListener(OnTryAgainButtonClicked);   
+        _mainMenuButton.onClick.AddListener(() => 
+        {
+           SceneManager.LoadScene(Consts.SceneNames.MENU_SCENE);
+        });
    }
     private void OnTryAgainButtonClicked()
     {

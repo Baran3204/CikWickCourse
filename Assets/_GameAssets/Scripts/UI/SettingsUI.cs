@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SettingsUI : MonoBehaviour
@@ -25,6 +26,10 @@ public class SettingsUI : MonoBehaviour
 
       _settingsButton.onClick.AddListener(OnSettingsButtonClicked);
       _resumeButton.onClick.AddListener(OnResumeButtonClicked);
+      _mainMenuButton.onClick.AddListener(() => 
+      {
+         SceneManager.LoadScene(Consts.SceneNames.MENU_SCENE);
+      });
    }
    private void OnSettingsButtonClicked()
    {
