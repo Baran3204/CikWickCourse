@@ -13350,7 +13350,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "try aga\u0131n\n\n"
+  m_text: 'try agaIN
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3fd53d777d966c6468aefd997b9d21d7, type: 2}
   m_sharedMaterial: {fileID: -3203209947385698093, guid: 3fd53d777d966c6468aefd997b9d21d7, type: 2}
