@@ -12,9 +12,9 @@ public class LosePopup : MonoBehaviour
     [SerializeField] private Button _tryAgainButton;
     [SerializeField] private Button _mainMenuButton;
     [SerializeField] private TMP_Text _timerText;
-
-    private void OnEnable() 
+   private void OnEnable() 
    {
+        
         _timerText.text = _timerUI.GetFinalTime();
 
         _tryAgainButton.onClick.AddListener(OnTryAgainButtonClicked);   
