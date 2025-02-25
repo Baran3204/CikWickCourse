@@ -2,5 +2,5 @@
 
 public enum GameState
 {
-   Play, Pause, Resume, GameOver
+   CutScene, Play, Pause, Resume, GameOver
 }

@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable() 
     {
-      ChangedGameState(GameState.Play);  
+      ChangedGameState(GameState.CutScene);  
     }
 
     public void ChangedGameState(GameState gameState)
