@@ -9241,6 +9241,10 @@ MonoBehaviour:
   _soundButton: {fileID: 1169613402}
   _resumeButton: {fileID: 1130679388}
   _mainMenuButton: {fileID: 1147868245}
+  _musicActiveSprite: {fileID: 21300000, guid: 572d015c0604b0b49b09265a1072b1d4, type: 3}
+  _musicPassiveSprite: {fileID: 21300000, guid: 5f1b2ea972b168448b4c057a28eb7f2a, type: 3}
+  _soundActiveSprite: {fileID: 21300000, guid: b70c31f4b7494cf40ad2dfcb839120cf, type: 3}
+  _soundPassiveSprite: {fileID: 21300000, guid: 11231ee54f9eb5948b175a2a69b0d050, type: 3}
   _animationDuration: 0.3
 --- !u!1001 &1332827935
 PrefabInstance:
