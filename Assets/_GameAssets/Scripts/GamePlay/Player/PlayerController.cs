@@ -88,6 +88,8 @@ public class PlayerController : MonoBehaviour
         }
         else if(Input.GetKeyDown(_jumpKey) && _canJump && IsGrounded())
         {
+           AudioManager.Instance.Play(SoundType.JumpSound);
+
             _canJump = false;
             SetPlayerJumping();
             Invoke(nameof(ResetJumping), _jumpCooldown);
